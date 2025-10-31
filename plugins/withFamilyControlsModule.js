@@ -5,7 +5,14 @@ const {
 } = require('@expo/config-plugins/build/ios/utils/Xcodeproj');
 
 const IOS_TARGET_NAME = 'HexitFresh';
-const SOURCE_FILES = ['FamilyControlsModule.swift', 'FamilyControlsModule.m'];
+const SOURCE_FILES = [
+  'FamilyControlsModule.swift',
+  'FamilyControlsModule.m',
+  'AppBlockerEmbedded.swift',
+  'AppBlockerView.swift',
+  'AppBlockerViewManager.swift',
+  'AppBlockerViewManager.m',
+];
 
 function ensureSourceFileLinked(project, fileName) {
   const target = project.pbxTargetByName(IOS_TARGET_NAME);

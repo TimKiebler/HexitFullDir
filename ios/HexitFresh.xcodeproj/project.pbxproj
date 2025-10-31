@@ -9,14 +9,23 @@
 /* Begin PBXBuildFile section */
 		035962BA5201B1A6A9A3D74D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C58C3A35452F526456868 /* ExpoModulesProvider.swift */; };
 		0B0403A9D9974B428F528F5D /* FamilyControlsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 75436AA4CAFF437ABBFED7C1 /* FamilyControlsModule.m */; };
+		1230AB7D2C314818BA449188 /* AppBlockerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF48104DEF46D0872D68B6 /* AppBlockerViewManager.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		22DC84C2AB454E258D11B779 /* AppBlockerEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6B81C01A545F08A946FBD /* AppBlockerEmbedded.swift */; };
+		327944A301F64E2C85E55FD5 /* AppBlockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC59B29996B4FD099619AC6 /* AppBlockerView.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		9196C50A5121A81DA8D283F9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */; };
 		919B921E2EB373C700E49E16 /* FamilyControlsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 919B921D2EB373C700E49E16 /* FamilyControlsModule.m */; };
 		919B92202EB373D200E49E16 /* FamilyControlsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B921F2EB373D200E49E16 /* FamilyControlsModule.swift */; };
 		919B92222EB373E800E49E16 /* FamilyControlsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B92212EB373E800E49E16 /* FamilyControlsModule.swift */; };
+		919B926F2EB4AFE200E49E16 /* AppBlockerEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */; };
+		919B927A2EB4B57C00E49E16 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B92782EB4B57C00E49E16 /* PermissionsView.swift */; };
+		919B927B2EB4B57C00E49E16 /* AppBlockerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B92762EB4B57C00E49E16 /* AppBlockerModel.swift */; };
+		919B927C2EB4B57C00E49E16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B92772EB4B57C00E49E16 /* ContentView.swift */; };
+		919B92812EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		ECF1D07C9D08DA1A9FD7E49B /* libPods-HexitFresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C4962476BFB63985C8E20F /* libPods-HexitFresh.a */; };
+		EDA981D73CA0431C93BDB23C /* AppBlockerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5998118188D74134AF8276EB /* AppBlockerViewManager.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +34,20 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HexitFresh/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = HexitFresh/Info.plist; sourceTree = "<group>"; };
 		16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = HexitFresh/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5998118188D74134AF8276EB /* AppBlockerViewManager.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = AppBlockerViewManager.swift; sourceTree = "<group>"; };
 		72C4962476BFB63985C8E20F /* libPods-HexitFresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HexitFresh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75436AA4CAFF437ABBFED7C1 /* FamilyControlsModule.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = FamilyControlsModule.m; sourceTree = "<group>"; };
+		8ACF48104DEF46D0872D68B6 /* AppBlockerViewManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = AppBlockerViewManager.m; sourceTree = "<group>"; };
+		8EF6B81C01A545F08A946FBD /* AppBlockerEmbedded.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = AppBlockerEmbedded.swift; sourceTree = "<group>"; };
 		919B921D2EB373C700E49E16 /* FamilyControlsModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyControlsModule.m; sourceTree = "<group>"; };
 		919B921F2EB373D200E49E16 /* FamilyControlsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyControlsModule.swift; sourceTree = "<group>"; };
 		919B92212EB373E800E49E16 /* FamilyControlsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyControlsModule.swift; sourceTree = "<group>"; };
+		919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerEmbedded.swift; sourceTree = "<group>"; };
+		919B92762EB4B57C00E49E16 /* AppBlockerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerModel.swift; sourceTree = "<group>"; };
+		919B92772EB4B57C00E49E16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		919B92782EB4B57C00E49E16 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
+		919B927D2EB4B58100E49E16 /* DeviceActivityMonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitorExtension.entitlements; sourceTree = "<group>"; };
+		919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
 		965CDDDAD58FA2AE98AAC6B5 /* Pods-HexitFresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexitFresh.release.xcconfig"; path = "Target Support Files/Pods-HexitFresh/Pods-HexitFresh.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = HexitFresh/SplashScreen.storyboard; sourceTree = "<group>"; };
 		ABD34A5971B5D08921996C58 /* Pods-HexitFresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexitFresh.debug.xcconfig"; path = "Target Support Files/Pods-HexitFresh/Pods-HexitFresh.debug.xcconfig"; sourceTree = "<group>"; };
@@ -38,6 +56,7 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = HexitFresh/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* HexitFresh-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HexitFresh-Bridging-Header.h"; path = "HexitFresh/HexitFresh-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCC59B29996B4FD099619AC6 /* AppBlockerView.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = AppBlockerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +78,20 @@
 				F11748442D0722820044C1D9 /* HexitFresh-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				919B92792EB4B57C00E49E16 /* AppBlocker */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */,
+				919B92802EB4B58100E49E16 /* DeviceActivityMonitorExtension */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				919B92212EB373E800E49E16 /* FamilyControlsModule.swift */,
 				919B921D2EB373C700E49E16 /* FamilyControlsModule.m */,
 				919B921F2EB373D200E49E16 /* FamilyControlsModule.swift */,
 				75436AA4CAFF437ABBFED7C1 /* FamilyControlsModule.m */,
 				16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */,
+				8EF6B81C01A545F08A946FBD /* AppBlockerEmbedded.swift */,
+				FCC59B29996B4FD099619AC6 /* AppBlockerView.swift */,
+				5998118188D74134AF8276EB /* AppBlockerViewManager.swift */,
+				8ACF48104DEF46D0872D68B6 /* AppBlockerViewManager.m */,
 			);
 			name = HexitFresh;
 			sourceTree = "<group>";
@@ -115,6 +141,25 @@
 				13B07F961A680F5B00A75B9A /* HexitFresh.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		919B92792EB4B57C00E49E16 /* AppBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				919B92762EB4B57C00E49E16 /* AppBlockerModel.swift */,
+				919B92772EB4B57C00E49E16 /* ContentView.swift */,
+				919B92782EB4B57C00E49E16 /* PermissionsView.swift */,
+			);
+			path = AppBlocker;
+			sourceTree = "<group>";
+		};
+		919B92802EB4B58100E49E16 /* DeviceActivityMonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				919B927D2EB4B58100E49E16 /* DeviceActivityMonitorExtension.entitlements */,
+				919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */,
+			);
+			path = DeviceActivityMonitorExtension;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -345,7 +390,16 @@
 				919B92202EB373D200E49E16 /* FamilyControlsModule.swift in Sources */,
 				919B92222EB373E800E49E16 /* FamilyControlsModule.swift in Sources */,
 				0B0403A9D9974B428F528F5D /* FamilyControlsModule.m in Sources */,
+				919B927A2EB4B57C00E49E16 /* PermissionsView.swift in Sources */,
+				919B927B2EB4B57C00E49E16 /* AppBlockerModel.swift in Sources */,
+				919B92812EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift in Sources */,
+				919B927C2EB4B57C00E49E16 /* ContentView.swift in Sources */,
 				035962BA5201B1A6A9A3D74D /* ExpoModulesProvider.swift in Sources */,
+				22DC84C2AB454E258D11B779 /* AppBlockerEmbedded.swift in Sources */,
+				919B926F2EB4AFE200E49E16 /* AppBlockerEmbedded.swift in Sources */,
+				327944A301F64E2C85E55FD5 /* AppBlockerView.swift in Sources */,
+				EDA981D73CA0431C93BDB23C /* AppBlockerViewManager.swift in Sources */,
+				1230AB7D2C314818BA449188 /* AppBlockerViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +421,7 @@
 					"FB_SONARKIT_ENABLED=1",
 				);
 				INFOPLIST_FILE = HexitFresh/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,7 +453,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 92FLVY9JPT;
 				INFOPLIST_FILE = HexitFresh/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
