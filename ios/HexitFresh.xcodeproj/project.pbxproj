@@ -8,16 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		035962BA5201B1A6A9A3D74D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68C58C3A35452F526456868 /* ExpoModulesProvider.swift */; };
-		0B0403A9D9974B428F528F5D /* FamilyControlsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 75436AA4CAFF437ABBFED7C1 /* FamilyControlsModule.m */; };
 		1230AB7D2C314818BA449188 /* AppBlockerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF48104DEF46D0872D68B6 /* AppBlockerViewManager.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		22DC84C2AB454E258D11B779 /* AppBlockerEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF6B81C01A545F08A946FBD /* AppBlockerEmbedded.swift */; };
 		327944A301F64E2C85E55FD5 /* AppBlockerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC59B29996B4FD099619AC6 /* AppBlockerView.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		9196C50A5121A81DA8D283F9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */; };
-		919B921E2EB373C700E49E16 /* FamilyControlsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 919B921D2EB373C700E49E16 /* FamilyControlsModule.m */; };
-		919B92202EB373D200E49E16 /* FamilyControlsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B921F2EB373D200E49E16 /* FamilyControlsModule.swift */; };
-		919B92222EB373E800E49E16 /* FamilyControlsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B92212EB373E800E49E16 /* FamilyControlsModule.swift */; };
 		919B926F2EB4AFE200E49E16 /* AppBlockerEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */; };
 		919B92812EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
@@ -33,12 +29,8 @@
 		16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = HexitFresh/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5998118188D74134AF8276EB /* AppBlockerViewManager.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = AppBlockerViewManager.swift; sourceTree = "<group>"; };
 		72C4962476BFB63985C8E20F /* libPods-HexitFresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HexitFresh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		75436AA4CAFF437ABBFED7C1 /* FamilyControlsModule.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = FamilyControlsModule.m; sourceTree = "<group>"; };
 		8ACF48104DEF46D0872D68B6 /* AppBlockerViewManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; path = AppBlockerViewManager.m; sourceTree = "<group>"; };
 		8EF6B81C01A545F08A946FBD /* AppBlockerEmbedded.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; path = AppBlockerEmbedded.swift; sourceTree = "<group>"; };
-		919B921D2EB373C700E49E16 /* FamilyControlsModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamilyControlsModule.m; sourceTree = "<group>"; };
-		919B921F2EB373D200E49E16 /* FamilyControlsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyControlsModule.swift; sourceTree = "<group>"; };
-		919B92212EB373E800E49E16 /* FamilyControlsModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyControlsModule.swift; sourceTree = "<group>"; };
 		919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerEmbedded.swift; sourceTree = "<group>"; };
 		919B927D2EB4B58100E49E16 /* DeviceActivityMonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitorExtension.entitlements; sourceTree = "<group>"; };
 		919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
@@ -76,10 +68,6 @@
 				919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */,
 				919B92802EB4B58100E49E16 /* DeviceActivityMonitorExtension */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				919B92212EB373E800E49E16 /* FamilyControlsModule.swift */,
-				919B921D2EB373C700E49E16 /* FamilyControlsModule.m */,
-				919B921F2EB373D200E49E16 /* FamilyControlsModule.swift */,
-				75436AA4CAFF437ABBFED7C1 /* FamilyControlsModule.m */,
 				16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */,
 				8EF6B81C01A545F08A946FBD /* AppBlockerEmbedded.swift */,
 				FCC59B29996B4FD099619AC6 /* AppBlockerView.swift */,
@@ -369,10 +357,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				919B921E2EB373C700E49E16 /* FamilyControlsModule.m in Sources */,
-				919B92202EB373D200E49E16 /* FamilyControlsModule.swift in Sources */,
-				919B92222EB373E800E49E16 /* FamilyControlsModule.swift in Sources */,
-				0B0403A9D9974B428F528F5D /* FamilyControlsModule.m in Sources */,
 				919B92812EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift in Sources */,
 				035962BA5201B1A6A9A3D74D /* ExpoModulesProvider.swift in Sources */,
 				22DC84C2AB454E258D11B779 /* AppBlockerEmbedded.swift in Sources */,
@@ -414,7 +398,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anonymous.HexitFresh;
-				PRODUCT_NAME = HexitFresh;
+				PRODUCT_NAME = "HexitFresh";
 				SWIFT_OBJC_BRIDGING_HEADER = "HexitFresh/HexitFresh-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -446,7 +430,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anonymous.HexitFresh;
-				PRODUCT_NAME = HexitFresh;
+				PRODUCT_NAME = "HexitFresh";
 				SWIFT_OBJC_BRIDGING_HEADER = "HexitFresh/HexitFresh-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -40,7 +40,6 @@
     },
     "plugins": [
       "expo-font",
-      "./plugins/withFamilyControlsModule.js",
       [
         "expo-build-properties",
         {
