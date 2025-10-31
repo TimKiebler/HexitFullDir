@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.yourcompany.appblocker</string>
+		<string>group.HexitFresh</string>
 	</array>
 </dict>
 </plist>

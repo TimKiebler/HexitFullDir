@@ -37,7 +37,7 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     }
     
     private func applyLockRestrictions() {
-        let sharedDefaults = UserDefaults(suiteName: "group.com.yourcompany.appblocker")
+        let sharedDefaults = UserDefaults(suiteName: "group.HexitFresh")
         
         if let appData = sharedDefaults?.data(forKey: "applicationTokensData") {
             if let appTokens = try? JSONDecoder().decode(Set<ApplicationToken>.self, from: appData) {
