@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "HexitFresh",
+    "slug": "HexitFresh",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.HexitFresh",
+      "icon": "./assets/icon-ios.png",
+      "entitlements": {
+        "com.apple.developer.family-controls": true,
+        "com.apple.developer.nfc.readersession.formats": ["NDEF", "TAG"]
+      },
+      "infoPlist": {
+        "NFCReaderUsageDescription": "Explain why you need to scan NFC tags.",
+        "NSUserTrackingUsageDescription": "… (if you use it)",
+        "NSMicrophoneUsageDescription": "…" 
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.HexitFresh"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      "./plugins/withFamilyControlsModule.js",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
+        }
+      ]
+    ]
+  }
+}
