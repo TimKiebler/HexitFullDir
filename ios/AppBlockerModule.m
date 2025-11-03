@@ -21,4 +21,7 @@ RCT_EXTERN_METHOD(requestScreenTimePermission:(RCTPromiseResolveBlock)resolve
 RCT_EXTERN_METHOD(getScreenTimeAuthorizationStatus:(RCTPromiseResolveBlock)resolve
                   rejecter:(RCTPromiseRejectBlock)reject)
 
+RCT_EXTERN_METHOD(getSelectionSummary:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+
 @end

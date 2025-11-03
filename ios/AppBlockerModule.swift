@@ -55,6 +55,18 @@ final class AppBlockerModule: NSObject {
     }
   }
 
+  @objc
+  func getSelectionSummary(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    Task { @MainActor in
+      let selection = EmbeddedAppBlockerModel.shared.selectionToDiscourage
+      resolve([
+        "applications": NSNumber(value: selection.applicationTokens.count),
+        "categories": NSNumber(value: selection.categoryTokens.count),
+        "webDomains": NSNumber(value: selection.webDomainTokens.count),
+      ])
+    }
+  }
+
   private func authorizationStatusString(_ status: AuthorizationStatus) -> String {
     switch status {
     case .notDetermined:
