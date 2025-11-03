@@ -16,6 +16,8 @@
 		9196C50A5121A81DA8D283F9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 16BBEF0452675D6336076D0B /* PrivacyInfo.xcprivacy */; };
 		919B926F2EB4AFE200E49E16 /* AppBlockerEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */; };
 		919B92812EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */; };
+		919B928B2EB500DA00E49E16 /* AppBlockerModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 919B928A2EB500DA00E49E16 /* AppBlockerModule.m */; };
+		919B928D2EB500E200E49E16 /* AppBlockerModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919B928C2EB500E200E49E16 /* AppBlockerModule.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		ECF1D07C9D08DA1A9FD7E49B /* libPods-HexitFresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C4962476BFB63985C8E20F /* libPods-HexitFresh.a */; };
 		EDA981D73CA0431C93BDB23C /* AppBlockerViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5998118188D74134AF8276EB /* AppBlockerViewManager.swift */; };
@@ -34,6 +36,8 @@
 		919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerEmbedded.swift; sourceTree = "<group>"; };
 		919B927D2EB4B58100E49E16 /* DeviceActivityMonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeviceActivityMonitorExtension.entitlements; sourceTree = "<group>"; };
 		919B927E2EB4B58100E49E16 /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
+		919B928A2EB500DA00E49E16 /* AppBlockerModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppBlockerModule.m; sourceTree = "<group>"; };
+		919B928C2EB500E200E49E16 /* AppBlockerModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerModule.swift; sourceTree = "<group>"; };
 		965CDDDAD58FA2AE98AAC6B5 /* Pods-HexitFresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexitFresh.release.xcconfig"; path = "Target Support Files/Pods-HexitFresh/Pods-HexitFresh.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = HexitFresh/SplashScreen.storyboard; sourceTree = "<group>"; };
 		ABD34A5971B5D08921996C58 /* Pods-HexitFresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexitFresh.debug.xcconfig"; path = "Target Support Files/Pods-HexitFresh/Pods-HexitFresh.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				F11748442D0722820044C1D9 /* HexitFresh-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				919B928C2EB500E200E49E16 /* AppBlockerModule.swift */,
+				919B928A2EB500DA00E49E16 /* AppBlockerModule.m */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				919B926E2EB4AFE200E49E16 /* AppBlockerEmbedded.swift */,
 				919B92802EB4B58100E49E16 /* DeviceActivityMonitorExtension */,
@@ -364,6 +370,8 @@
 				327944A301F64E2C85E55FD5 /* AppBlockerView.swift in Sources */,
 				EDA981D73CA0431C93BDB23C /* AppBlockerViewManager.swift in Sources */,
 				1230AB7D2C314818BA449188 /* AppBlockerViewManager.m in Sources */,
+				919B928D2EB500E200E49E16 /* AppBlockerModule.swift in Sources */,
+				919B928B2EB500DA00E49E16 /* AppBlockerModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
