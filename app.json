@@ -39,6 +39,7 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      "react-native-nfc-manager",
       "expo-font",
       [
         "expo-build-properties",
