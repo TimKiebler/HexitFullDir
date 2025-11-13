@@ -12,19 +12,48 @@ import UIKit
 // Override the functions below to customize the shields used in various situations.
 // The system provides a default appearance for any methods that your subclass doesn't override.
 // Make sure that your class name matches the NSExtensionPrincipalClass in your Info.plist.
+
 final class ShieldConfigurationExtension: ShieldConfigurationDataSource {
-    private func loud() -> ShieldConfiguration {
+
+    private func hexitConfig() -> ShieldConfiguration {
         ShieldConfiguration(
-            backgroundBlurStyle: .systemUltraThinMaterial,
-            backgroundColor: UIColor.systemRed.withAlphaComponent(0.25),
-            icon: .init(systemName: "lock.trianglebadge.exclamationmark"),
-            title: .init(text: "Locked by Hexit", color: .white),
-            primaryButtonLabel: .init(text: "OK", color: .white),
-            primaryButtonBackgroundColor: .systemRed
+            // Dark look to mimic the mockup
+            backgroundBlurStyle: .systemChromeMaterialDark,
+            backgroundColor: UIColor.black.withAlphaComponent(0.85),
+
+            // Top icon (system controls size). Use your asset if available.
+            icon: UIImage(named: "HexStoneFrontal") ?? UIImage(systemName: "hexagon.fill"),
+
+            // Big headline (line break forces two lines)
+            title: .init(
+                text: "BLEIB STARK –\nDER ALGORITHMUS KANN WARTEN",
+                color: .white
+            ),
+
+            // Smaller, lighter body copy (two lines)
+            subtitle: .init(
+                text: "DEIN HANDY IST GERADE IM HEXIT MODUS.\nTAP DEIN HEXIT UM DIESE APP WIEDER ZU BENUTZEN.",
+                color: .tertiaryLabel
+            ),
+
+            // Black pill button feel (system rounds, you can’t control radius)
+            primaryButtonLabel: .init(
+                text: "ZURÜCK ZU DEN WICHTIGEN DINGEN IM LEBEN",
+                color: .white
+            ),
+            primaryButtonBackgroundColor: .black,
+
+            // No secondary button in your mock
+            secondaryButtonLabel: nil
         )
     }
-    override func configuration(shielding application: Application) -> ShieldConfiguration { loud() }
-    override func configuration(shielding application: Application, in category: ActivityCategory) -> ShieldConfiguration { loud() }
-    override func configuration(shielding webDomain: WebDomain) -> ShieldConfiguration { loud() }
-    override func configuration(shielding webDomain: WebDomain, in category: ActivityCategory) -> ShieldConfiguration { loud() }
+
+    // Apps
+    override func configuration(shielding application: Application) -> ShieldConfiguration { hexitConfig() }
+    // Apps via category
+    override func configuration(shielding application: Application, in category: ActivityCategory) -> ShieldConfiguration { hexitConfig() }
+    // Web domains
+    override func configuration(shielding webDomain: WebDomain) -> ShieldConfiguration { hexitConfig() }
+    // Web domains via category
+    override func configuration(shielding webDomain: WebDomain, in category: ActivityCategory) -> ShieldConfiguration { hexitConfig() }
 }
