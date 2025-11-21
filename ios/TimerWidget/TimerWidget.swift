@@ -76,9 +76,3 @@ struct TimerWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
-    TimerWidget()
-} timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
-}

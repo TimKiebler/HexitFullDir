@@ -1,18 +1,16 @@
-//
-//  TimerWidgetBundle.swift
-//  TimerWidget
-//
-//  Created by Tim Kiebler on 20.11.25.
-//
-
+// TimerWidgetBundle.swift
 import WidgetKit
 import SwiftUI
 
 @main
 struct TimerWidgetBundle: WidgetBundle {
     var body: some Widget {
+        // Your existing static widget
         TimerWidget()
-        TimerWidgetControl()
-        TimerWidgetLiveActivity()
+
+        // Live Activity
+        if #available(iOSApplicationExtension 16.1, *) {
+            TimerWidgetLiveActivity()
+        }
     }
 }

@@ -44,7 +44,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NFCReaderUsageDescription</key>
-	<string>we need your aproval to read your HexStone </string>
+	<string>Explain why you need to scan NFC tags.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -54,6 +54,10 @@
 	</dict>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>…</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSSupportsLiveActivitiesFrequentUpdates</key>
+	<true/>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>… (if you use it)</string>
 	<key>RCTNewArchEnabled</key>
