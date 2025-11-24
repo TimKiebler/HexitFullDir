@@ -8,11 +8,10 @@ final class TimerActivityManager {
 
     private var activity: Activity<TimerAttributes>?
 
-    /// Start a new countdown Live Activity
-    func start(title: String, durationSeconds: TimeInterval) async throws {
+    /// Start a new Live Activity that keeps running until `stop()` is called
+    func start(title: String, durationSeconds _: TimeInterval) async throws {
         let attributes = TimerAttributes(title: title)
         let startDate = Date()
-        let endDate = startDate.addingTimeInterval(durationSeconds)
 
         let state = TimerAttributes.ContentState(
             startDate: startDate,
@@ -21,7 +20,7 @@ final class TimerActivityManager {
 
         let content = ActivityContent(
             state: state,
-            staleDate: endDate
+            staleDate: nil // keep the activity alive until explicitly ended
         )
 
         let activity = try Activity.request(

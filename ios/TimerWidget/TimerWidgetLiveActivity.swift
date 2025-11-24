@@ -8,6 +8,7 @@ import UIKit
 struct TimerWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: TimerAttributes.self) { context in
+            // Lock screen / banner
             TimerLiveActivityView(
                 context: context,
                 showsTitle: false
@@ -15,19 +16,22 @@ struct TimerWidgetLiveActivity: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.center) {
+                    // Expanded Dynamic Island
                     TimerLiveActivityView(
                         context: context,
                         showsTitle: true
                     )
                 }
             } compactLeading: {
-                TimerIconView(size: 30)
+                // Small icon in compact island
+                TimerIconView(size: 24)
             } compactTrailing: {
+                // Timer on the right in compact island
                 Text(context.state.startDate, style: .timer)
                     .font(.system(.caption2, design: .monospaced))
                     .monospacedDigit()
             } minimal: {
-                TimerIconView(size: 24)
+                TimerIconView(size: 20)
             }
         }
     }
@@ -38,11 +42,13 @@ private struct TimerLiveActivityView: View {
     let showsTitle: Bool
 
     var body: some View {
-        HStack(spacing: 18) {
-            TimerIconView()
+        HStack(spacing: 16) {
+            // BIG icon on the far left
+            TimerIconView(size: 56)
 
             Spacer(minLength: 0)
 
+            // Timer (and optional title) on the far right
             VStack(alignment: .trailing, spacing: showsTitle ? 2 : 0) {
                 if showsTitle {
                     Text(context.attributes.title)
@@ -56,14 +62,12 @@ private struct TimerLiveActivityView: View {
                     .foregroundStyle(.white)
             }
         }
-        .padding(.horizontal, 20)
-        .padding(.vertical, 16)
-        .background(
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(Color(red: 23 / 255, green: 24 / 255, blue: 27 / 255))
-        )
+        // Let it stretch edge-to-edge inside the system’s Live Activity container
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 10)
+        // Use the system Live Activity background; no extra inner “card”
         .containerBackground(.clear, for: .widget)
-        .padding(.horizontal, 6)
     }
 }
 
@@ -71,29 +75,26 @@ private struct TimerIconView: View {
     var size: CGFloat = 44
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: size / 3, style: .continuous)
-                .fill(Color.white.opacity(0.08))
-
-            iconGraphic
-        }
-        .frame(width: size, height: size)
+        // Just the icon, no extra rounded background around it
+        iconGraphic
+            .frame(width: size, height: size)
     }
 
     @ViewBuilder
     private var iconGraphic: some View {
         if let uiImage = UIImage(
-            named: "HexStoneFrontal",
+            named: "HexStoneFrontalMinimal",
             in: .timerWidgetBundle,
             with: nil
         ) {
             Image(uiImage: uiImage)
                 .resizable()
                 .scaledToFit()
-                .padding(6)
         } else {
+            // Fallback SF Symbol
             Image(systemName: "hexagon.fill")
-                .font(.system(size: size / 2, weight: .semibold))
+                .resizable()
+                .scaledToFit()
                 .foregroundStyle(.white.opacity(0.9))
         }
     }
