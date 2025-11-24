@@ -8,10 +8,14 @@ final class TimerActivityManager {
 
     private var activity: Activity<TimerAttributes>?
 
-    /// Start a new Live Activity that keeps running until `stop()` is called
-    func start(title: String, durationSeconds _: TimeInterval) async throws {
+    /// Start a new Live Activity that keeps running until `stop()` is called.
+    /// `durationSeconds` represents the already-elapsed time on the timer so the widget
+    /// picks up from the current session instead of resetting to zero.
+    func start(title: String, durationSeconds: TimeInterval) async throws {
         let attributes = TimerAttributes(title: title)
-        let startDate = Date()
+        // Offset the start date backwards by the elapsed duration so the widget timer
+        // displays the accumulated time immediately.
+        let startDate = Date().addingTimeInterval(-durationSeconds)
 
         let state = TimerAttributes.ContentState(
             startDate: startDate,
