@@ -27,6 +27,20 @@ final class TimerActivityManager {
             staleDate: nil // keep the activity alive until explicitly ended
         )
 
+        // Reuse an existing activity when present to avoid multiple widgets.
+        let existingActivities = Activity<TimerAttributes>.activities
+            .filter { $0.activityState != .ended }
+
+        if let active = existingActivities.first ?? activity {
+            self.activity = active
+            await active.update(content)
+
+            for extra in existingActivities where extra.id != active.id {
+                await endActivity(extra)
+            }
+            return
+        }
+
         let activity = try Activity.request(
             attributes: attributes,
             content: content
@@ -37,8 +51,13 @@ final class TimerActivityManager {
 
     /// End the Live Activity
     func stop() async {
-        guard let activity else { return }
+        for activity in Activity<TimerAttributes>.activities {
+            await endActivity(activity)
+        }
+        self.activity = nil
+    }
 
+    private func endActivity(_ activity: Activity<TimerAttributes>) async {
         let finalState = TimerAttributes.ContentState(
             startDate: activity.content.state.startDate,
             isRunning: false
@@ -48,7 +67,5 @@ final class TimerActivityManager {
             ActivityContent(state: finalState, staleDate: nil),
             dismissalPolicy: .immediate
         )
-
-        self.activity = nil
     }
 }
